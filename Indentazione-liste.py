@@ -7,4 +7,10 @@ print(f"Lunghezza lista[0][0]: {len(lista[0][0])}")
 print(f"Lunghezza lista[0][1]: {len(lista[0][1])}")
 
 
+print(f"Lunghezza lista: {range(len(lista))}")
+print(f"Lunghezza lista[0]: {range(len(lista[0]))}")
+print(f"Lunghezza lista[0][0]: {range(len(lista[0][0]))}")
+print(f"Lunghezza lista[0][1]: {range(len(lista[0][1]))}")
+
+
 
