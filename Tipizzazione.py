@@ -34,10 +34,24 @@ def dividiStringa(dati):
             stringlist.append(dati[i])
     return numberlist, stringlist
 
-print(dividiStringa(dati)) 
+#print(dividiStringa(dati)) 
+
+numbers = [4, 8, 56, 36, 478]
+
+def sommaLista(numbers):
+    somma = sum(numbers)
+    print(somma)
+
+
+def mediaLista(numbers): 
+    media = sum(numbers) / len(numbers)
+    print(media)
+
 
 #es compito funzione che accetti la lista e faccia la somma e la media dei numeri
 
+sommaLista(numbers)
+mediaLista(numbers)
 
 
     
