@@ -21,8 +21,7 @@ dati = [1, 2, "ciao", 3.5, [1 ,2], None, 18, "mondo", 3.14]
 #crea un metodo che analizzi la lista e le divida in 2 base al tipo di dato:
 #stringlist e numberlist. 
 
-numberlist = []
-stringlist = []
+
 
 def dividiStringa(dati):
     for i in range(len(dati)):
@@ -47,11 +46,32 @@ def mediaLista(numbers):
     media = sum(numbers) / len(numbers)
     print(media)
 
+def sommaListDiversa(dati):
+    numberlist = []
+    stringlist = []
+    for i in range(len(dati)):
+        if isinstance(dati[i], int or float):
+            numberlist.append(dati[i])
+        elif isinstance(dati[i], str):
+            stringlist.append(dati[i])
+    somma = sum(numberlist)
+    media = somma / len(numberlist)
+    return somma, media, numberlist, stringlist
+
+stringlist, numberlist, mediaX, somma = sommaListDiversa(dati)
+
 
 #es compito funzione che accetti la lista e faccia la somma e la media dei numeri
 
-sommaLista(numbers)
-mediaLista(numbers)
+#sommaLista(numbers)
+#mediaLista(numbers)
+
+print(somma)
+print(mediaX)
+print(numberlist)
+print(stringlist)
+
+
 
 
     
