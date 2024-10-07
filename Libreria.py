@@ -11,6 +11,8 @@ def aggiungi_libro(libreria, titolo, autore):
 
 
 
+
+
 def aggiungi_valutazione(libreria, titolo, valutazione):
     for libro in libreria:
         if libro["Titolo"] == titolo:
@@ -34,7 +36,8 @@ def mostra_libreria(libreria):
         media = calcola_media(libreria, libro["Titolo"])
         print(f"Titolo: {libro['Titolo']}, Autore: {libro['Autore']}, Media Valutazioni: {media}")
 
-
-print(f"New Valutations: {aggiungi_valutazione(libreria_iniziale, 'bella ciao', 7)}")
-print(f"Media delle valutazioni del libro 'L_insostenibile leggerezza dell_essere': {calcola_media(libreria_iniziale, 'L_insostenibile leggerezza dell_essere')}")
+aggiungi_libro(libreria_iniziale, 'Dei diritti e delle pene', 'Cesare Beccaria')
+# print(f"New Valutations: {aggiungi_valutazione(libreria_iniziale, 'bella ciao', 7)}")
+# print(f"Media delle valutazioni del libro 'L_insostenibile leggerezza dell_essere': {calcola_media(libreria_iniziale, 'L_insostenibile leggerezza dell_essere')}")
+aggiungi_valutazione(libreria_iniziale, 'Dei diritti e delle pene', 9)
 mostra_libreria(libreria_iniziale)
