@@ -1,7 +1,7 @@
 
 libreria_iniziale = [
     {"Titolo": "LOTR", "Autore": "J.R.R. TOLKIEN", "Valutazioni": [7, 8, 9]},
-    {"Titolo": "Se questo è una dpnna", "Autore": "Secondo Metti", "Valutazioni": [1, 2, 3]},
+    {"Titolo": "L_insostenibile leggerezza dell_essere", "Autore": "Paolo Franchi", "Valutazioni": [1, 2, 3]},
 ]
 
 
@@ -29,10 +29,10 @@ def calcola_media(libreria, titolo):
                 media = sum(valutazioni) / len(valutazioni)
                 return (media)
             else:
-                return "Nessuna valutazione"
+                return "No valutazioni"
     return "Libro non esistente"
 
-print(f"Media delle valutazioni del libro 'Se questo è una donna': {calcola_media(libreria_iniziale, 'Se questo è una donna')}")
+print(f"Media delle valutazioni del libro 'L_insostenibile leggerezza dell_essere': {calcola_media(libreria_iniziale, 'L_insostenibile leggerezza dell_essere')}")
 
 def mostra_libreria(libreria):
     for libro in libreria:
