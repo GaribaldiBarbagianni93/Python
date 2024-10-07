@@ -35,6 +35,6 @@ def mostra_libreria(libreria):
         print(f"Titolo: {libro['Titolo']}, Autore: {libro['Autore']}, Media Valutazioni: {media}")
 
 
-print(f"Valutazioni nuove: {aggiungi_valutazione(libreria_iniziale, 'bella ciao', 7)}")
+print(f"New Valutations: {aggiungi_valutazione(libreria_iniziale, 'bella ciao', 7)}")
 print(f"Media delle valutazioni del libro 'L_insostenibile leggerezza dell_essere': {calcola_media(libreria_iniziale, 'L_insostenibile leggerezza dell_essere')}")
 mostra_libreria(libreria_iniziale)
